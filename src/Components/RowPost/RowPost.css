@@ -1,0 +1,53 @@
+.row {
+  margin-left: 20px;
+  color: #fff;
+  margin-top: 50px;
+  font-size: 30px;
+  text-align: start;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.posters {
+  display: flex;
+  padding: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.posters::-webkit-scrollbar {
+  display: none;
+}
+
+.poster {
+  cursor: pointer;
+  /* max-width: 300px; */
+  max-height: 220px;
+  margin-right: 10px;
+}
+.smallPoster {
+  cursor: pointer;
+  max-height: 150px;
+  margin-right: 10px;
+}
+
+.poster:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 35px;
+}
+.smallPoster:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 35px;
+}
+
+@media screen and (max-width: 450px) {
+  .category-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 600px) {
+  .category-title {
+    font-size: 2.2rem;
+  }
+}
